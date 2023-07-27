@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Yoga En Pévèle</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="keywords" content="yoga hatha-yoga pevele cysoing tournai wannehain energie posture meditation souplesse">
+  <meta name="description" content="Yoga en Pévèle, cours de Yoga privé ou en petits groupes dans la Pévèle, campagne de Cysoing.">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    function initMap() {
+      var uluru = {lat: 50.52908, lng: 3.23363};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMV0h2icKO2DcFhVHdPLZ5Sgkws5wxcEU&callback=initMap"></script>
+</body>
+</html>

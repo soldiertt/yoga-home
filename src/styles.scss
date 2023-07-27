@@ -1,0 +1,224 @@
+/* You can add global styles to this file, and also import other style files */
+/***********************
+ ******* GENERAL *******
+ ***********************/
+
+h2 {
+  text-decoration: underline;
+}
+
+.yep-medium-text {
+  font-size: 1.1em;
+}
+
+.yep-med2-text {
+  font-size: 1.3em;
+}
+
+ul.yep-list.yep-medium-text > li {
+  font-size: 1.1em;
+  line-height: 35px;
+}
+
+.yep-large-text {
+  font-size: 1.5em;
+}
+
+.yep-contact-row .card {
+  min-height: 200px;
+}
+
+
+ul.yep-list {
+  margin-left: 20px;
+  list-style-type: circle;
+}
+
+ul.yep-list.yep-list-top > li {
+  font-size: 17px;
+}
+
+ul.yep-list > li {
+  font-size: 15px;
+}
+
+ul.yep-list li {
+  list-style-type: circle;
+}
+
+.yep-bg-beige {
+  background: linear-gradient(to left, white, #F9FBEE);
+}
+
+.yep-bg-beige2 {
+  background-color: #F9FBEE;
+}
+
+.alert {
+  display: none;
+}
+
+/***********************
+ ******** NAV **********
+ ***********************/
+
+nav .brand-logo {
+  font-size: 1.5rem;
+}
+
+
+/***********************
+ ******* FOOTER ********
+ ***********************/
+
+main.root, #footer {
+  padding-left: 300px;
+}
+
+/***********************
+ ********* CARD ********
+ ***********************/
+
+.card.horizontal .card-image {
+  max-width: 30%;
+}
+
+.card.horizontal .card-image img {
+  margin-left: 10px;
+}
+
+/***********************
+ ******* SECTIONS ******
+ ***********************/
+
+#intro {
+  height: 100vh;
+}
+#where {
+  height: 700px;
+}
+
+#price {
+  height: 730px;
+}
+
+#price p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#hathayoga p {
+  text-align: justify;
+}
+
+/***********************
+ ***** RESPONSIVE ******
+ ***********************/
+
+@media only screen and (max-width : 1750px) {
+  #price {
+    height: 850px;
+  }
+}
+
+@media only screen and (max-width : 1600px) {
+  #price {
+    height: 950px;
+  }
+}
+
+@media only screen and (max-width : 1400px) {
+  #price {
+    height: 1050px;
+  }
+
+}
+
+@media only screen and (max-width : 1300px) {
+  #price {
+    height: 1150px;
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  #price {
+    height: 1320px;
+  }
+}
+
+
+@media only screen and (max-width : 992px) {
+  body > main, body > footer {
+    padding-left: 0;
+  }
+
+  #price {
+    height: 1100px;
+  }
+
+}
+
+@media only screen and (max-width : 750px) {
+  #price {
+    height: 1300px;
+  }
+  #where {
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width : 440px) {
+  #price {
+    height: 1400px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .navbar-fixed {
+    height: 50px;
+  }
+
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 50px;
+    line-height: 50px;
+  }
+}
+
+.table-of-contents a.active {
+  background-color: #004d40;
+}
+
+/* FORM COLOR */
+
+/* label color */
+.input-field label {
+  color: #006064 !important;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #006064 !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #006064 ;
+  box-shadow: 0 1px 0 0 #006064 ;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #006064 ;
+  box-shadow: 0 1px 0 0 #006064 ;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #006064 ;
+  box-shadow: 0 1px 0 0 #006064 ;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #006064 ;
+}
