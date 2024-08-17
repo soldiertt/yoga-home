@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-import {catchError, map, Observable, of} from 'rxjs';
-import {HttpClient} from '@angular/common/http';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,19 +6,9 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  apiLoaded: Observable<boolean>;
+  options: google.maps.MapOptions = {
+    center: {lat: 50.52908, lng: 3.23363},
+    zoom: 12
+  };
   title = 'yoga-home';
-
-
-  constructor(httpClient: HttpClient) {
-    this.apiLoaded = httpClient
-      .jsonp(
-        'https://maps.googleapis.com/maps/api/js?key=AIzaSyBMV0h2icKO2DcFhVHdPLZ5Sgkws5wxcEU',
-        'initMap'
-      )
-      .pipe(
-        map(() => true),
-        catchError(() => of(false))
-      );
-  }
 }
